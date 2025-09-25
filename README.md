@@ -7,9 +7,9 @@
 ---
 
 ## 🚀 About Me  
-- 🎓 Computer Science Co-op Student @ Ontario Tech University (GPA: 4.01/4.30, Dean’s List)  
+- 🎓 Computer Science Co-op Student @ Ontario Tech University (GPA: 3.81, Dean’s List)  
 - 🛠 Full-Stack Developer passionate about **AI, productivity, and user experience design**  
-- 💼 Software Intern @ Meraki Hair & Medi-Spa (built landing page that doubled client leads)  
+- 💼 Freelance Web Developer @ Meraki Hair & Medi-Spa (built landing page that doubled client leads)  
 - ✨ Creating software that improves daily life  
 - 🌱 Co-founder of **HealthTech Club**, organizing workshops and projects that merge tech + health  
 
