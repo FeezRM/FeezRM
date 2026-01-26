@@ -42,7 +42,7 @@
 - 📜 Session history, audio playback & content moderation  
 
 ---
-
+<!--
 ## 📊 GitHub Stats  
 
 <p align="center">
@@ -51,6 +51,7 @@
 </p>
 
 ---
+-->
 
 ## 🌍 Connect With Me  
 
