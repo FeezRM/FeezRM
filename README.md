@@ -10,7 +10,7 @@ CS Honours Co-op student at **Ontario Tech University** (3.78 GPA · Dean's List
 
 | Project | What it does | Stack |
 |---------|-------------|-------|
-| **[ContentSpy]** | AI competitor intelligence platform — transcript ingestion → gap detection → script generation. 10-user private beta. | Next.js · FastAPI · PostgreSQL · Supabase |
+| **ContentSpy** | AI competitor intelligence platform — transcript ingestion → gap detection → script generation. 10-user private beta. | Next.js · FastAPI · PostgreSQL · Supabase |
 | **[AI Short-Form Editor](https://github.com/FeezRM/AI-ShortForm-Editor)** | End-to-end agentic pipeline: word-level transcription → LLM edit-decision list → ffmpeg render with captions. Confidence-gate filters bad AI cuts at 0.85 threshold. | Python · faster-whisper · OpenCV · LLM Agents |
 | **[FocusFlow](https://github.com/FeezRM/FocusFlow)** | Real-time computer vision attention monitor. 6-state cognitive FSM, 10 FPS, <100ms inference. 50+ participant study: ~50% less distracted time, ~40% faster refocus. | Python · FastAPI · MediaPipe · Electron |
 
