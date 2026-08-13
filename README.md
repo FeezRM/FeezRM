@@ -2,7 +2,7 @@
 
 # Hey, I'm Faiz 👋
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=6366F1&center=true&vCenter=true&width=600&lines=CS+Honours+Co-op+%40+Ontario+Tech;Building+AI+systems+that+actually+work;Computer+Vision+%7C+LLM+Pipelines+%7C+Full+Stack;Available+for+Co-op%3A+July+%E2%80%93+Nov+2026)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=6366F1&center=true&vCenter=true&width=600&lines=CS+Honours+Co-op+%40+Ontario+Tech;Building+AI[...]
 
 <p>
   <a href="https://linkedin.com/in/faizkerawala"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
@@ -20,7 +20,7 @@
 
 CS Honours Co-op student at **Ontario Tech University** · **3.78 GPA · Dean's List**
 
-I build AI systems that are measurable, empirically validated, and actually useful — real-time computer vision pipelines, LLM evaluation frameworks, and multi-agent workflows. I care about making intelligent systems behave predictably, and proving it with numbers.
+I build AI systems that are measurable, empirically validated, and actually useful — real-time computer vision pipelines, LLM evaluation frameworks, and multi-agent workflows. I care about makin[...]
 
 > 🟢 **Available for full-time co-op · July – November 2026** · Canadian Citizen · Ajax, ON
 
@@ -42,7 +42,7 @@ Transcript ingestion → AI video analysis → content gap detection → script 
 </td>
 <td width="50%" valign="top">
 
-**[🎬 AI Short-Form Editor](https://github.com/FeezRM/AI-ShortForm-Editor)**
+**[🎬 Vibe Editor](https://github.com/FeezRM/vibe-editing)**
 > Agentic Video Pipeline
 
 End-to-end: word-level transcription → LLM edit-decision list → ffmpeg render with captions. Confidence-gate filters bad AI cuts at 0.85 threshold — no per-clip human review.
@@ -150,3 +150,4 @@ Deterministic guardrails, JSON schemas, and classification logic — 100+ profil
 <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=FeezRM&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" />
 
 </div>
+
