@@ -2,7 +2,7 @@
 
 # Hey, I'm Faiz 👋
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=6366F1&center=true&vCenter=true&width=600&lines=CS+Honours+Co-op+%40+Ontario+Tech;Building+AI[...]
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=6366F1&center=true&vCenter=true&width=600&lines=CS+Honours+Co-op+%40+Ontario+Tech;Building+AI)
 
 <p>
   <a href="https://linkedin.com/in/faizkerawala"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
