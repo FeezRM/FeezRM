@@ -131,21 +131,12 @@ Deterministic guardrails, JSON schemas, and classification logic — 100+ profil
 
 ### 💼 Experience
 
+**Northbridge Insurance** · *Incoming Software Developer Intern* · Spet – Dec 2026
+- haven't started but gonna make huge impact
+
 **MekTek Software Solutions & Engineering** · *Frontend Developer Intern* · Sept – Dec 2025
 - Audited AI-driven platform: identified and resolved **10+ critical security findings** before production
 - Built headless CMS with Next.js + WordPress REST APIs → **65% faster** content publishing
 
-**Meraki Hair & Medi-Spa** · *Freelance Full Stack Developer* · Apr – Sept 2025
-- Shipped SSR-optimized React/Next.js platform → **doubled bookings**, **2.3× session duration** in 60 days
-
 ---
-
-<div align="center">
-
-### 📊 GitHub Stats
-
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=FeezRM&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" />
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=FeezRM&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" />
-
-</div>
 
