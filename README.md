@@ -1,17 +1,17 @@
 <!-- gen:hero -->
 <div align="center">
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./assets/hero-dark-still.svg?v=7bf67bc8">
-  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/hero-light-still.svg?v=5588efe5">
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg?v=077386e9">
-  <img alt="Terminal: faiz@github. whoami → Faiz Kerawala, CS Honours Co-op @ Ontario Tech. ps aux → contentspy (building) — 10-user private beta · 6 creator workflows; vibe-editor (shipped) — 0.85 confidence gate on AI cuts; focusflow (shipped) — 10 FPS · &lt;100ms inference · 50+ participants. cat now.md → starting @ Northbridge Insurance in 7 days." src="./assets/hero-light.svg?v=e3657144" width="900">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./assets/hero-dark-still.svg?v=4bcb9f9e">
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/hero-light-still.svg?v=980c45fc">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg?v=d5e84d59">
+  <img alt="Terminal: faiz@github. whoami → Faiz Kerawala, CS Honours Co-op @ Ontario Tech. ps aux → contentspy (building) — generated 10M+ views · private beta; vibe-editor (shipped) — editing workflow for viral videos; focusflow (shipped) — improving focus by 50%. cat now.md → currently @ Northbridge Insurance · Toronto, ON; open to Winter &amp; Summer 2027 internships." src="./assets/hero-light.svg?v=5dc9296b" width="900">
 </picture>
 </div>
 <!-- /gen:hero -->
 
 <div align="center">
 
-**Faiz Kerawala** — CS Honours Co-op @ Ontario Tech
+**Faiz Kerawala** — CS Honours Co-op @ Ontario Tech · Toronto, ON
 
 <a href="https://linkedin.com/in/faizkerawala">LinkedIn</a> ·
 <a href="mailto:faiz.kera@gmail.com">Email</a>
@@ -22,7 +22,7 @@
 
 <!-- gen:projects -->
 <details>
-<summary><b>contentspy</b> — AI Competitor Intelligence Platform &nbsp;·&nbsp; <code>private beta</code><br/><sub>10-user private beta · 6 creator workflows</sub></summary>
+<summary><b>contentspy</b> — AI Competitor Intelligence Platform<br/><sub>generated 10M+ views · private beta</sub></summary>
 
 Transcript ingestion → AI video analysis → content-gap detection → script generation. Currently powering 6+ creator workflows across a 10-user private beta.
 
@@ -33,7 +33,7 @@ Source is private while the beta runs.
 </details>
 
 <details>
-<summary><b>vibe-editor</b> — Agentic Video Pipeline<br/><sub>0.85 confidence gate on AI cuts</sub></summary>
+<summary><b>vibe-editor</b> — Agentic Video Pipeline<br/><sub>editing workflow for viral videos</sub></summary>
 
 Turns raw video into edited output through word-level transcription, LLM-generated edit decisions, and FFmpeg rendering. A 0.85 confidence gate filters unreliable AI cuts before they reach the render pipeline.
 
@@ -44,7 +44,7 @@ Turns raw video into edited output through word-level transcription, LLM-generat
 </details>
 
 <details>
-<summary><b>focusflow</b> — AI Attention Monitor<br/><sub>10 FPS · &lt;100ms inference · 50+ participants</sub></summary>
+<summary><b>focusflow</b> — AI Attention Monitor<br/><sub>improving focus by 50%</sub></summary>
 
 Computer-vision pipeline running at 10 FPS with &lt;100ms inference, backed by a 6-state attention FSM. In a 50+ participant study: ~50% less distracted time and ~40% faster refocus.
 
@@ -58,7 +58,7 @@ Computer-vision pipeline running at 10 FPS with &lt;100ms inference, backed by a
 ## `$ history | grep work`
 
 <!-- gen:experience -->
-**Northbridge Insurance** · _Incoming Software Developer Intern_ · Sep – Dec 2026
+**Northbridge Insurance** · **Software Developer Intern** · Sep – Dec 2026
 
 **MekTek Software Solutions & Engineering** · _Frontend Developer Intern_ · Sep – Dec 2025
 
@@ -84,13 +84,14 @@ deciding what to do when the model is wrong. A confidence gate in front of a ren
 pipeline, a deterministic FSM behind a vision model, schema constraints on generated
 output. The interesting engineering is in the guardrails.
 
-Best way to reach me is [faiz.kera@gmail.com](mailto:faiz.kera@gmail.com).
+Open to **Winter and Summer 2027 internships**. Reach me at
+[faiz.kera@gmail.com](mailto:faiz.kera@gmail.com).
 
 ---
 
 <sub>
 This page renders itself. <code>profile.config.json</code> is the source of truth;
 <code>scripts/build.mjs</code> emits the terminals as animated SVG and rewrites the
-generated blocks above. A GitHub Action reruns it daily and commits only when
-something real has changed — the process table, the countdown, the last push.
+generated blocks above, deriving the experience tense from the date so nothing
+goes stale. A GitHub Action reruns it and commits only on a real change.
 </sub>

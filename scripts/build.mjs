@@ -12,7 +12,7 @@ import { dirname, join } from 'node:path';
 import { THEMES } from './lib/theme.mjs';
 import { renderHero, heroAlt, HERO_WIDTH } from './render-hero.mjs';
 import { renderStack, stackAlt, STACK_WIDTH } from './render-stack.mjs';
-import { latestPush, roleState } from './live.mjs';
+import { roleState } from './live.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const hash8 = (s) => createHash('sha256').update(s).digest('hex').slice(0, 8);
@@ -63,7 +63,8 @@ function picture({ base, alt, width, hashes, motion = false }) {
 function projectsBlock(cfg) {
   return cfg.projects
     .map((p) => {
-      const badge = p.badge ? ` &nbsp;·&nbsp; <code>${h(p.badge)}</code>` : '';
+      const dupBadge = p.badge && p.signal.toLowerCase().includes(p.badge.toLowerCase());
+      const badge = p.badge && !dupBadge ? ` &nbsp;·&nbsp; <code>${h(p.badge)}</code>` : '';
       const stack = p.stack.map((s) => `\`${s}\``).join(' ');
       const link = p.url
         ? `\n**Repo →** [${p.url.replace('https://github.com/', '')}](${p.url})\n`
@@ -98,16 +99,13 @@ async function main() {
   const now = new Date();
   const cfg = JSON.parse(await readFile(join(ROOT, 'profile.config.json'), 'utf8'));
 
-  const push = await latestPush(cfg.identity.github, { skipRepo: cfg.identity.github });
-  const live = { push };
-
   await mkdir(join(ROOT, 'assets'), { recursive: true });
 
   const svgs = {
-    'hero-dark': renderHero(cfg, THEMES.dark, live, now, true),
-    'hero-light': renderHero(cfg, THEMES.light, live, now, true),
-    'hero-dark-still': renderHero(cfg, THEMES.dark, live, now, false),
-    'hero-light-still': renderHero(cfg, THEMES.light, live, now, false),
+    'hero-dark': renderHero(cfg, THEMES.dark, now, true),
+    'hero-light': renderHero(cfg, THEMES.light, now, true),
+    'hero-dark-still': renderHero(cfg, THEMES.dark, now, false),
+    'hero-light-still': renderHero(cfg, THEMES.light, now, false),
     'stack-dark': renderStack(cfg, THEMES.dark),
     'stack-light': renderStack(cfg, THEMES.light)
   };
@@ -123,7 +121,7 @@ async function main() {
 
   md = inject(md, 'hero', picture({
     base: 'hero',
-    alt: heroAlt(cfg, live, now),
+    alt: heroAlt(cfg, now),
     width: HERO_WIDTH,
     hashes,
     motion: true
@@ -141,7 +139,6 @@ async function main() {
 
   await writeFile(join(ROOT, 'README.md'), md, 'utf8');
   console.log(`  README.md          ${(Buffer.byteLength(md) / 1024).toFixed(1)} KB`);
-  console.log(push ? `  live: ${push.repo}@${push.sha}` : '  live: no push data (offline or rate-limited)');
 }
 
 main().catch((err) => {

@@ -4,7 +4,7 @@
 //   PID 0 | PROJECT 7 | STATUS 21 | SIGNAL 34
 
 import { renderTerminal, seg, dot } from './lib/term.mjs';
-import { nowLine, pushLine } from './live.mjs';
+import { nowLine } from './live.mjs';
 
 const COL_PID = 0;
 const COL_PROJECT = 7;
@@ -15,7 +15,15 @@ const STATUS_COLOR = { building: 'amber', shipped: 'green' };
 
 export const HERO_WIDTH = 900;
 
-export function heroLines(cfg, live, now = new Date()) {
+/** The `cat now.md` body: derived role line first, then hand-written lines. */
+export function nowLines(cfg, now = new Date()) {
+  return [
+    nowLine(cfg.experience[0], now, cfg.identity.location),
+    ...(cfg.now || [])
+  ];
+}
+
+export function heroLines(cfg, now = new Date()) {
   const { identity, projects } = cfg;
   const lines = [];
 
@@ -57,14 +65,9 @@ export function heroLines(cfg, live, now = new Date()) {
   lines.push({ k: 'gap' });
 
   lines.push({ k: 'cmd', text: 'cat now.md' });
-  lines.push({
-    k: 'out',
-    segs: [seg(0, '»', 'cyan'), seg(2, nowLine(cfg.experience[0], now), 'text')]
-  });
-  lines.push({
-    k: 'out',
-    segs: [seg(0, '»', 'cyan'), seg(2, pushLine(live.push), 'dim')]
-  });
+  for (const text of nowLines(cfg, now)) {
+    lines.push({ k: 'out', segs: [seg(0, '»', 'cyan'), seg(2, text, 'text')] });
+  }
   lines.push({ k: 'gap' });
 
   lines.push({ k: 'prompt' });
@@ -72,24 +75,24 @@ export function heroLines(cfg, live, now = new Date()) {
   return lines;
 }
 
-export function renderHero(cfg, theme, live, now = new Date(), motion = true) {
+export function renderHero(cfg, theme, now = new Date(), motion = true) {
   return renderTerminal({
     id: cfg.identity,
     theme,
     title: `${cfg.identity.user}@${cfg.identity.host} — zsh`,
     width: HERO_WIDTH,
-    lines: heroLines(cfg, live, now),
+    lines: heroLines(cfg, now),
     hold: 3.0,
     motion
   });
 }
 
 /** Alt text, so the hero is not a black box to a screen reader or to search. */
-export function heroAlt(cfg, live, now = new Date()) {
+export function heroAlt(cfg, now = new Date()) {
   const { identity, projects } = cfg;
   const ps = projects.map((p) => `${p.slug} (${p.status}) — ${p.signal}`).join('; ');
   return (
     `Terminal: ${identity.user}@${identity.host}. whoami → ${identity.name}, ${identity.title}. ` +
-    `ps aux → ${ps}. cat now.md → ${nowLine(cfg.experience[0], now)}.`
+    `ps aux → ${ps}. cat now.md → ${nowLines(cfg, now).join('; ')}.`
   );
 }
