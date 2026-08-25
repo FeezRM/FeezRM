@@ -106,17 +106,18 @@ function projectsBlock(cfg) {
     rows.push(`<tr>\n${cells.join('\n')}\n</tr>`);
   }
 
-  // Without an explicit width the table shrinks to its content instead of
-  // spanning the content column, so the grids stop lining up with each other.
-  return `<table width="100%">\n${rows.join('\n')}\n</table>`;
+  return `<table>\n${rows.join('\n')}\n</table>`;
 }
 
 /**
- * Experience as full-width cards, one per role, newest first. The current role
- * gets a pill; past roles carry their dates instead.
+ * Experience as side-by-side cards, newest first, matching the two-up row in
+ * the projects grid. Cards sit in a row rather than stacked because GitHub
+ * styles README tables `display:block; width:max-content` -- a table only
+ * reaches the full content column when its content is wide enough to be clamped
+ * by max-width, and a single stacked column never is.
  */
 function experienceBlock(cfg, now) {
-  const rows = cfg.experience.map((e) => {
+  const cells = cfg.experience.map((e) => {
     const s = roleState(e, now);
     const body = [
       '',
@@ -127,31 +128,22 @@ function experienceBlock(cfg, now) {
     ];
     if (s.phase === 'current') body.push('**🟢 current**', '');
     if (e.bullets.length) body.push(e.bullets.map((b) => `- ${b}`).join('\n'), '');
-    return `<tr>\n<td valign="top">\n${body.join('\n')}\n</td>\n</tr>`;
+    return `<td width="50%" valign="top">\n${body.join('\n')}\n</td>`;
   });
-  // Without an explicit width the table shrinks to its content instead of
-  // spanning the content column, so the grids stop lining up with each other.
-  return `<table width="100%">\n${rows.join('\n')}\n</table>`;
+  return `<table>\n<tr>\n${cells.join('\n')}\n</tr>\n</table>`;
 }
 
-/** Stack as a label/chips table -- same chip language as the project cards. */
+/**
+ * Stack as plain markdown lines rather than a table, for the same width reason:
+ * a paragraph always spans the content column, a narrow table never does.
+ */
 function stackBlock(cfg) {
-  const rows = cfg.stack.map((r) => {
-    const chips = r.items.map((i) => `\`${i}\``).join(' ');
-    return [
-      '<tr>',
-      `<td width="16%" valign="top"><b>${h(r.label)}</b></td>`,
-      '<td width="84%" valign="top">',
-      '',
-      chips,
-      '',
-      '</td>',
-      '</tr>'
-    ].join('\n');
-  });
-  // Without an explicit width the table shrinks to its content instead of
-  // spanning the content column, so the grids stop lining up with each other.
-  return `<table width="100%">\n${rows.join('\n')}\n</table>`;
+  return cfg.stack
+    .map((r) => {
+      const chips = r.items.map((i) => `\`${i}\``).join(' ');
+      return `**${h(r.label)}** &nbsp;·&nbsp; ${chips}`;
+    })
+    .join('\n\n');
 }
 
 async function main() {

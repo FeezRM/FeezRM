@@ -27,7 +27,7 @@
 ## `$ ls ~/projects`
 
 <!-- gen:projects -->
-<table width="100%">
+<table>
 <tr>
 <td colspan="2" valign="top">
 
@@ -77,9 +77,9 @@ Computer-vision pipeline running at 10 FPS with &lt;100ms inference, backed by a
 ## `$ history | grep work`
 
 <!-- gen:experience -->
-<table width="100%">
+<table>
 <tr>
-<td valign="top">
+<td width="50%" valign="top">
 
 #### Northbridge Insurance
 
@@ -88,9 +88,7 @@ Computer-vision pipeline running at 10 FPS with &lt;100ms inference, backed by a
 **🟢 current**
 
 </td>
-</tr>
-<tr>
-<td valign="top">
+<td width="50%" valign="top">
 
 #### MekTek Software Solutions &amp; Engineering
 
@@ -107,56 +105,17 @@ Computer-vision pipeline running at 10 FPS with &lt;100ms inference, backed by a
 ## `$ stack --list`
 
 <!-- gen:stack -->
-<table width="100%">
-<tr>
-<td width="16%" valign="top"><b>languages</b></td>
-<td width="84%" valign="top">
+**languages** &nbsp;·&nbsp; `python` `typescript` `java` `sql` `c++`
 
-`python` `typescript` `java` `sql` `c++`
+**backend** &nbsp;·&nbsp; `fastapi` `flask` `spring boot` `node`
 
-</td>
-</tr>
-<tr>
-<td width="16%" valign="top"><b>backend</b></td>
-<td width="84%" valign="top">
+**frontend** &nbsp;·&nbsp; `react` `next.js` `electron`
 
-`fastapi` `flask` `spring boot` `node`
+**ml / cv** &nbsp;·&nbsp; `opencv` `mediapipe` `scikit-learn`
 
-</td>
-</tr>
-<tr>
-<td width="16%" valign="top"><b>frontend</b></td>
-<td width="84%" valign="top">
+**llm** &nbsp;·&nbsp; `claude api` `faster-whisper`
 
-`react` `next.js` `electron`
-
-</td>
-</tr>
-<tr>
-<td width="16%" valign="top"><b>ml / cv</b></td>
-<td width="84%" valign="top">
-
-`opencv` `mediapipe` `scikit-learn`
-
-</td>
-</tr>
-<tr>
-<td width="16%" valign="top"><b>llm</b></td>
-<td width="84%" valign="top">
-
-`claude api` `faster-whisper`
-
-</td>
-</tr>
-<tr>
-<td width="16%" valign="top"><b>infra</b></td>
-<td width="84%" valign="top">
-
-`aws` `docker` `postgres` `supabase` `git`
-
-</td>
-</tr>
-</table>
+**infra** &nbsp;·&nbsp; `aws` `docker` `postgres` `supabase` `git`
 <!-- /gen:stack -->
 
 ## `$ man faiz`
