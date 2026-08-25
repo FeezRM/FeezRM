@@ -39,7 +39,7 @@ Transcript ingestion → AI video analysis → content-gap detection → script 
 
 **🟡 building** &nbsp;·&nbsp; generated 10M+ views · private beta
 
-`Next.js` `FastAPI` `PostgreSQL` `Supabase` &nbsp;·&nbsp; `private beta`
+`Next.js` `FastAPI` `PostgreSQL` `Supabase`
 
 </td>
 </tr>

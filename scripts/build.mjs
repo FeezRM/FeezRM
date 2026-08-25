@@ -71,9 +71,10 @@ const STATUS_PILL = { building: '🟡 building', shipped: '🟢 shipped' };
 function projectCard(p) {
   const title = p.url ? `[${p.name}](${p.url})` : p.name;
   const status = STATUS_PILL[p.status] || p.status;
+  // No repo chip when there is no repo -- the signal line already says why.
   const repo = p.url
-    ? `[\`${p.url.replace('https://github.com/', '')}\`](${p.url})`
-    : '`private beta`';
+    ? ` &nbsp;·&nbsp; [\`${p.url.replace('https://github.com/', '')}\`](${p.url})`
+    : '';
 
   return [
     '',
@@ -85,7 +86,7 @@ function projectCard(p) {
     '',
     `**${status}** &nbsp;·&nbsp; ${h(p.signal)}`,
     '',
-    `${p.stack.map((s) => `\`${s}\``).join(' ')} &nbsp;·&nbsp; ${repo}`,
+    `${p.stack.map((s) => `\`${s}\``).join(' ')}${repo}`,
     ''
   ].join('\n');
 }
