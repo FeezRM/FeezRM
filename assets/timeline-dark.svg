@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="323" viewBox="0 0 900 323" role="img" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,&quot;Cascadia Mono&quot;,Menlo,Consolas,&quot;Liberation Mono&quot;,monospace" font-size="15">
+<style>text{white-space:pre}</style>
+<defs>
+<filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.28"/></filter>
+
+</defs>
+<g filter="url(#sh)">
+<rect x="10" y="10" width="880" height="303" rx="12" fill="#0b0f17" stroke="#252d3b"/>
+<path d="M10 22a12 12 0 0 1 12-12h856a12 12 0 0 1 12 12v26H10z" fill="#131924"/>
+<line x1="10" y1="48" x2="890" y2="48" stroke="#252d3b"/>
+<circle cx="34" cy="29" r="6" fill="#ff5f57"/><circle cx="54" cy="29" r="6" fill="#febc2e"/><circle cx="74" cy="29" r="6" fill="#28c840"/>
+<text x="450" y="34" text-anchor="middle" fill="#7d8796" font-size="12">faiz@github — git</text>
+</g>
+<g><text x="36" y="79" textLength="99" lengthAdjust="spacing" fill="#a78bfa" font-weight="600">faiz@github</text><text x="135" y="79" textLength="9" lengthAdjust="spacing" fill="#4c5566">:</text><text x="144" y="79" textLength="9" lengthAdjust="spacing" fill="#58a6ff">~</text><text x="153" y="79" textLength="9" lengthAdjust="spacing" fill="#7d8796">$</text></g>
+<text x="171" y="79" textLength="225" lengthAdjust="spacing" fill="#c9d1d9">git log --graph --oneline</text>
+<g><text x="63" y="129" textLength="189" lengthAdjust="spacing" fill="#58a6ff" font-weight="600">northbridge-insurance</text><text x="270" y="129" textLength="126" lengthAdjust="spacing" fill="#3fb950">(HEAD) current</text></g>
+<g><text x="63" y="154" textLength="378" lengthAdjust="spacing" fill="#7d8796">Software Developer Intern · Sep – Dec 2026</text></g>
+<g><text x="63" y="204" textLength="135" lengthAdjust="spacing" fill="#58a6ff" font-weight="600">mektek-software</text></g>
+<g><text x="63" y="229" textLength="378" lengthAdjust="spacing" fill="#7d8796">Frontend Developer Intern · Sep – Dec 2025</text></g>
+<g><text x="63" y="254" textLength="9" lengthAdjust="spacing" fill="#4c5566">•</text><text x="81" y="254" textLength="486" lengthAdjust="spacing" fill="#c9d1d9">10+ critical security findings resolved pre-production</text></g>
+<g><text x="63" y="279" textLength="9" lengthAdjust="spacing" fill="#4c5566">•</text><text x="81" y="279" textLength="531" lengthAdjust="spacing" fill="#c9d1d9">headless CMS on Next.js + WordPress → 65% faster publishing</text></g>
+<g><line x1="40.5" y1="124" x2="40.5" y2="199" stroke="#4c5566" stroke-width="2"/><line x1="40.5" y1="199" x2="40.5" y2="289" stroke="#4c5566" stroke-width="2" stroke-dasharray="2 4" opacity="0.55"/><circle cx="40.5" cy="124" r="4.5" fill="#3fb950" stroke="#3fb950" stroke-width="2"/><circle cx="40.5" cy="199" r="4.5" fill="#0b0f17" stroke="#4c5566" stroke-width="2"/></g>
+</svg>

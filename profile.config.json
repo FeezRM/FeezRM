@@ -25,7 +25,9 @@
         "FastAPI",
         "PostgreSQL",
         "Supabase"
-      ]
+      ],
+      "icon": "🕵️",
+      "featured": true
     },
     {
       "pid": 2318,
@@ -42,7 +44,9 @@
         "faster-whisper",
         "OpenCV",
         "LLM Agents"
-      ]
+      ],
+      "icon": "🎬",
+      "featured": false
     },
     {
       "pid": 3390,
@@ -59,7 +63,9 @@
         "FastAPI",
         "MediaPipe",
         "Electron"
-      ]
+      ],
+      "icon": "🧠",
+      "featured": false
     }
   ],
   "experience": [
@@ -69,7 +75,9 @@
       "start": "2026-09-01",
       "end": "2026-12-31",
       "bullets": [],
-      "current": true
+      "current": true,
+      "slug": "northbridge-insurance",
+      "highlights": []
     },
     {
       "org": "MekTek Software Solutions & Engineering",
@@ -79,6 +87,11 @@
       "bullets": [
         "Audited AI-driven platform: identified and resolved **10+ critical security findings** before production",
         "Built headless CMS with Next.js + WordPress REST APIs → **65% faster** content publishing"
+      ],
+      "slug": "mektek-software",
+      "highlights": [
+        "10+ critical security findings resolved pre-production",
+        "headless CMS on Next.js + WordPress → 65% faster publishing"
       ]
     }
   ],

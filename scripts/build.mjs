@@ -12,7 +12,7 @@ import { dirname, join } from 'node:path';
 import { THEMES } from './lib/theme.mjs';
 import { renderHero, heroAlt, HERO_WIDTH } from './render-hero.mjs';
 import { renderStack, stackAlt, STACK_WIDTH } from './render-stack.mjs';
-import { roleState } from './live.mjs';
+import { renderTimeline, timelineAlt, TIMELINE_WIDTH } from './render-timeline.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const hash8 = (s) => createHash('sha256').update(s).digest('hex').slice(0, 8);
@@ -60,39 +60,53 @@ function picture({ base, alt, width, hashes, motion = false }) {
   ].join('\n');
 }
 
-function projectsBlock(cfg) {
-  return cfg.projects
-    .map((p) => {
-      const dupBadge = p.badge && p.signal.toLowerCase().includes(p.badge.toLowerCase());
-      const badge = p.badge && !dupBadge ? ` &nbsp;·&nbsp; <code>${h(p.badge)}</code>` : '';
-      const stack = p.stack.map((s) => `\`${s}\``).join(' ');
-      const link = p.url
-        ? `\n**Repo →** [${p.url.replace('https://github.com/', '')}](${p.url})\n`
-        : '\nSource is private while the beta runs.\n';
-      return [
-        '<details>',
-        `<summary><b>${h(p.slug)}</b> — ${h(p.tagline)}${badge}<br/><sub>${h(p.signal)}</sub></summary>`,
-        '',
-        h(p.detail),
-        link,
-        stack,
-        '',
-        '</details>'
-      ].join('\n');
-    })
-    .join('\n\n');
+// Status pills reuse the terminal's colour language. Emoji rather than coloured
+// text because GitHub markdown has no way to colour a word inline.
+const STATUS_PILL = { building: '🟡 building', shipped: '🟢 shipped' };
+
+/**
+ * One project card. Blank lines around the markdown are load-bearing: without
+ * them GitHub renders the cell contents as literal text instead of markdown.
+ */
+function projectCard(p) {
+  const title = p.url ? `[${p.name}](${p.url})` : p.name;
+  const status = STATUS_PILL[p.status] || p.status;
+  const repo = p.url
+    ? `[\`${p.url.replace('https://github.com/', '')}\`](${p.url})`
+    : '`private beta`';
+
+  return [
+    '',
+    `#### ${p.icon} ${title}`,
+    '',
+    `> ${p.tagline}`,
+    '',
+    h(p.detail),
+    '',
+    `**${status}** &nbsp;·&nbsp; ${h(p.signal)}`,
+    '',
+    `${p.stack.map((s) => `\`${s}\``).join(' ')} &nbsp;·&nbsp; ${repo}`,
+    ''
+  ].join('\n');
 }
 
-function experienceBlock(cfg, now) {
-  return cfg.experience
-    .map((e) => {
-      const s = roleState(e, now);
-      const role = s.phase === 'current' ? `**${s.role}**` : `_${s.role}_`;
-      const head = `**${e.org}** · ${role} · ${s.range}`;
-      if (!e.bullets.length) return head;
-      return `${head}\n\n${e.bullets.map((b) => `- ${b}`).join('\n')}`;
-    })
-    .join('\n\n');
+function projectsBlock(cfg) {
+  const featured = cfg.projects.filter((p) => p.featured);
+  const rest = cfg.projects.filter((p) => !p.featured);
+  const rows = [];
+
+  // The flagship spans the full width; everything else pairs up two to a row.
+  for (const p of featured) {
+    rows.push(`<tr>\n<td colspan="2" valign="top">\n${projectCard(p)}\n</td>\n</tr>`);
+  }
+  for (let i = 0; i < rest.length; i += 2) {
+    const cells = rest.slice(i, i + 2).map(
+      (p) => `<td width="50%" valign="top">\n${projectCard(p)}\n</td>`
+    );
+    rows.push(`<tr>\n${cells.join('\n')}\n</tr>`);
+  }
+
+  return `<table>\n${rows.join('\n')}\n</table>`;
 }
 
 async function main() {
@@ -107,7 +121,9 @@ async function main() {
     'hero-dark-still': renderHero(cfg, THEMES.dark, now, false),
     'hero-light-still': renderHero(cfg, THEMES.light, now, false),
     'stack-dark': renderStack(cfg, THEMES.dark),
-    'stack-light': renderStack(cfg, THEMES.light)
+    'stack-light': renderStack(cfg, THEMES.light),
+    'timeline-dark': renderTimeline(cfg, THEMES.dark, now),
+    'timeline-light': renderTimeline(cfg, THEMES.light, now)
   };
 
   const hashes = {};
@@ -134,8 +150,14 @@ async function main() {
     hashes
   }));
 
+  md = inject(md, 'timeline', picture({
+    base: 'timeline',
+    alt: timelineAlt(cfg, now),
+    width: TIMELINE_WIDTH,
+    hashes
+  }));
+
   md = inject(md, 'projects', projectsBlock(cfg));
-  md = inject(md, 'experience', experienceBlock(cfg, now));
 
   await writeFile(join(ROOT, 'README.md'), md, 'utf8');
   console.log(`  README.md          ${(Buffer.byteLength(md) / 1024).toFixed(1)} KB`);

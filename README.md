@@ -1,3 +1,14 @@
+<div align="center">
+
+# Faiz Kerawala
+
+**CS Honours Co-op @ Ontario Tech** &nbsp;·&nbsp; Toronto, ON
+
+<a href="https://linkedin.com/in/faizkerawala"><b>LinkedIn</b></a> &nbsp;·&nbsp;
+<a href="mailto:faiz.kera@gmail.com"><b>Email</b></a>
+
+</div>
+
 <!-- gen:hero -->
 <div align="center">
 <picture>
@@ -9,62 +20,70 @@
 </div>
 <!-- /gen:hero -->
 
-<div align="center">
+<div align="center"><sub><i>AI systems · backend engineering · computer vision</i></sub></div>
 
-**Faiz Kerawala** — CS Honours Co-op @ Ontario Tech · Toronto, ON
+<br/>
 
-<a href="https://linkedin.com/in/faizkerawala">LinkedIn</a> ·
-<a href="mailto:faiz.kera@gmail.com">Email</a>
-
-</div>
-
-## `$ cat ~/projects/*`
+## `$ ls ~/projects`
 
 <!-- gen:projects -->
-<details>
-<summary><b>contentspy</b> — AI Competitor Intelligence Platform<br/><sub>generated 10M+ views · private beta</sub></summary>
+<table>
+<tr>
+<td colspan="2" valign="top">
+
+#### 🕵️ ContentSpy
+
+> AI Competitor Intelligence Platform
 
 Transcript ingestion → AI video analysis → content-gap detection → script generation. Currently powering 6+ creator workflows across a 10-user private beta.
 
-Source is private while the beta runs.
+**🟡 building** &nbsp;·&nbsp; generated 10M+ views · private beta
 
-`Next.js` `FastAPI` `PostgreSQL` `Supabase`
+`Next.js` `FastAPI` `PostgreSQL` `Supabase` &nbsp;·&nbsp; `private beta`
 
-</details>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-<details>
-<summary><b>vibe-editor</b> — Agentic Video Pipeline<br/><sub>editing workflow for viral videos</sub></summary>
+#### 🎬 [Vibe Editor](https://github.com/FeezRM/vibe-editing)
+
+> Agentic Video Pipeline
 
 Turns raw video into edited output through word-level transcription, LLM-generated edit decisions, and FFmpeg rendering. A 0.85 confidence gate filters unreliable AI cuts before they reach the render pipeline.
 
-**Repo →** [FeezRM/vibe-editing](https://github.com/FeezRM/vibe-editing)
+**🟢 shipped** &nbsp;·&nbsp; editing workflow for viral videos
 
-`Python` `faster-whisper` `OpenCV` `LLM Agents`
+`Python` `faster-whisper` `OpenCV` `LLM Agents` &nbsp;·&nbsp; [`FeezRM/vibe-editing`](https://github.com/FeezRM/vibe-editing)
 
-</details>
+</td>
+<td width="50%" valign="top">
 
-<details>
-<summary><b>focusflow</b> — AI Attention Monitor<br/><sub>improving focus by 50%</sub></summary>
+#### 🧠 [FocusFlow](https://github.com/FeezRM/FocusFlow)
+
+> AI Attention Monitor
 
 Computer-vision pipeline running at 10 FPS with &lt;100ms inference, backed by a 6-state attention FSM. In a 50+ participant study: ~50% less distracted time and ~40% faster refocus.
 
-**Repo →** [FeezRM/FocusFlow](https://github.com/FeezRM/FocusFlow)
+**🟢 shipped** &nbsp;·&nbsp; improving focus by 50%
 
-`Python` `FastAPI` `MediaPipe` `Electron`
+`Python` `FastAPI` `MediaPipe` `Electron` &nbsp;·&nbsp; [`FeezRM/FocusFlow`](https://github.com/FeezRM/FocusFlow)
 
-</details>
+</td>
+</tr>
+</table>
 <!-- /gen:projects -->
 
-## `$ history | grep work`
+## `$ git log`
 
-<!-- gen:experience -->
-**Northbridge Insurance** · **Software Developer Intern** · Sep – Dec 2026
-
-**MekTek Software Solutions & Engineering** · _Frontend Developer Intern_ · Sep – Dec 2025
-
-- Audited AI-driven platform: identified and resolved **10+ critical security findings** before production
-- Built headless CMS with Next.js + WordPress REST APIs → **65% faster** content publishing
-<!-- /gen:experience -->
+<!-- gen:timeline -->
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/timeline-dark.svg?v=b3a616ca">
+  <img alt="Experience as a git log. Northbridge Insurance — Software Developer Intern, Sep – Dec 2026 MekTek Software Solutions &amp; Engineering — Frontend Developer Intern, Sep – Dec 2025. 10+ critical security findings resolved pre-production; headless CMS on Next.js + WordPress → 65% faster publishing" src="./assets/timeline-light.svg?v=0b4fe0d2" width="900">
+</picture>
+</div>
+<!-- /gen:timeline -->
 
 ## `$ neofetch`
 
@@ -89,9 +108,10 @@ Open to **Winter and Summer 2027 internships**. Reach me at
 
 ---
 
+<div align="center">
 <sub>
-This page renders itself. <code>profile.config.json</code> is the source of truth;
-<code>scripts/build.mjs</code> emits the terminals as animated SVG and rewrites the
-generated blocks above, deriving the experience tense from the date so nothing
-goes stale. A GitHub Action reruns it and commits only on a real change.
+This page renders itself — <code>profile.config.json</code> is the source of truth and
+<code>scripts/build.mjs</code> emits every terminal above as SVG.<br/>
+The experience tense is derived from the date, so nothing here can go stale.
 </sub>
+</div>
