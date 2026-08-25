@@ -11,8 +11,7 @@ import { dirname, join } from 'node:path';
 
 import { THEMES } from './lib/theme.mjs';
 import { renderHero, heroAlt, HERO_WIDTH } from './render-hero.mjs';
-import { renderStack, stackAlt, STACK_WIDTH } from './render-stack.mjs';
-import { renderTimeline, timelineAlt, TIMELINE_WIDTH } from './render-timeline.mjs';
+import { roleState } from './live.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const hash8 = (s) => createHash('sha256').update(s).digest('hex').slice(0, 8);
@@ -110,6 +109,45 @@ function projectsBlock(cfg) {
   return `<table>\n${rows.join('\n')}\n</table>`;
 }
 
+/**
+ * Experience as full-width cards, one per role, newest first. The current role
+ * gets a pill; past roles carry their dates instead.
+ */
+function experienceBlock(cfg, now) {
+  const rows = cfg.experience.map((e) => {
+    const s = roleState(e, now);
+    const body = [
+      '',
+      `#### ${h(e.org)}`,
+      '',
+      `> ${h(s.role)} &nbsp;·&nbsp; ${s.range}`,
+      ''
+    ];
+    if (s.phase === 'current') body.push('**🟢 current**', '');
+    if (e.bullets.length) body.push(e.bullets.map((b) => `- ${b}`).join('\n'), '');
+    return `<tr>\n<td valign="top">\n${body.join('\n')}\n</td>\n</tr>`;
+  });
+  return `<table>\n${rows.join('\n')}\n</table>`;
+}
+
+/** Stack as a label/chips table -- same chip language as the project cards. */
+function stackBlock(cfg) {
+  const rows = cfg.stack.map((r) => {
+    const chips = r.items.map((i) => `\`${i}\``).join(' ');
+    return [
+      '<tr>',
+      `<td width="18%" valign="top"><b>${h(r.label)}</b></td>`,
+      '<td valign="top">',
+      '',
+      chips,
+      '',
+      '</td>',
+      '</tr>'
+    ].join('\n');
+  });
+  return `<table>\n${rows.join('\n')}\n</table>`;
+}
+
 async function main() {
   const now = new Date();
   const cfg = JSON.parse(await readFile(join(ROOT, 'profile.config.json'), 'utf8'));
@@ -120,11 +158,7 @@ async function main() {
     'hero-dark': renderHero(cfg, THEMES.dark, now, true),
     'hero-light': renderHero(cfg, THEMES.light, now, true),
     'hero-dark-still': renderHero(cfg, THEMES.dark, now, false),
-    'hero-light-still': renderHero(cfg, THEMES.light, now, false),
-    'stack-dark': renderStack(cfg, THEMES.dark),
-    'stack-light': renderStack(cfg, THEMES.light),
-    'timeline-dark': renderTimeline(cfg, THEMES.dark, now),
-    'timeline-light': renderTimeline(cfg, THEMES.light, now)
+    'hero-light-still': renderHero(cfg, THEMES.light, now, false)
   };
 
   const hashes = {};
@@ -144,21 +178,9 @@ async function main() {
     motion: true
   }));
 
-  md = inject(md, 'stack', picture({
-    base: 'stack',
-    alt: stackAlt(cfg),
-    width: STACK_WIDTH,
-    hashes
-  }));
-
-  md = inject(md, 'timeline', picture({
-    base: 'timeline',
-    alt: timelineAlt(cfg, now),
-    width: TIMELINE_WIDTH,
-    hashes
-  }));
-
   md = inject(md, 'projects', projectsBlock(cfg));
+  md = inject(md, 'experience', experienceBlock(cfg, now));
+  md = inject(md, 'stack', stackBlock(cfg));
 
   await writeFile(join(ROOT, 'README.md'), md, 'utf8');
   console.log(`  README.md          ${(Buffer.byteLength(md) / 1024).toFixed(1)} KB`);

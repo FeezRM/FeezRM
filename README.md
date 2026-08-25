@@ -74,26 +74,89 @@ Computer-vision pipeline running at 10 FPS with &lt;100ms inference, backed by a
 </table>
 <!-- /gen:projects -->
 
-## `$ git log`
+## `$ history | grep work`
 
-<!-- gen:timeline -->
-<div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/timeline-dark.svg?v=b3a616ca">
-  <img alt="Experience as a git log. Northbridge Insurance — Software Developer Intern, Sep – Dec 2026 MekTek Software Solutions &amp; Engineering — Frontend Developer Intern, Sep – Dec 2025. 10+ critical security findings resolved pre-production; headless CMS on Next.js + WordPress → 65% faster publishing" src="./assets/timeline-light.svg?v=0b4fe0d2" width="900">
-</picture>
-</div>
-<!-- /gen:timeline -->
+<!-- gen:experience -->
+<table>
+<tr>
+<td valign="top">
 
-## `$ neofetch`
+#### Northbridge Insurance
+
+> Software Developer Intern &nbsp;·&nbsp; Sep – Dec 2026
+
+**🟢 current**
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+#### MekTek Software Solutions &amp; Engineering
+
+> Frontend Developer Intern &nbsp;·&nbsp; Sep – Dec 2025
+
+- Audited AI-driven platform: identified and resolved **10+ critical security findings** before production
+- Built headless CMS with Next.js + WordPress REST APIs → **65% faster** content publishing
+
+</td>
+</tr>
+</table>
+<!-- /gen:experience -->
+
+## `$ stack --list`
 
 <!-- gen:stack -->
-<div align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/stack-dark.svg?v=14fbb1ed">
-  <img alt="Tech stack, neofetch style. languages: python, typescript, java, sql, c++. backend: fastapi, flask, spring boot, node. frontend: react, next.js, electron. ml / cv: opencv, mediapipe, scikit-learn. llm: claude api, faster-whisper. infra: aws, docker, postgres, supabase, git." src="./assets/stack-light.svg?v=4adba6e7" width="900">
-</picture>
-</div>
+<table>
+<tr>
+<td width="18%" valign="top"><b>languages</b></td>
+<td valign="top">
+
+`python` `typescript` `java` `sql` `c++`
+
+</td>
+</tr>
+<tr>
+<td width="18%" valign="top"><b>backend</b></td>
+<td valign="top">
+
+`fastapi` `flask` `spring boot` `node`
+
+</td>
+</tr>
+<tr>
+<td width="18%" valign="top"><b>frontend</b></td>
+<td valign="top">
+
+`react` `next.js` `electron`
+
+</td>
+</tr>
+<tr>
+<td width="18%" valign="top"><b>ml / cv</b></td>
+<td valign="top">
+
+`opencv` `mediapipe` `scikit-learn`
+
+</td>
+</tr>
+<tr>
+<td width="18%" valign="top"><b>llm</b></td>
+<td valign="top">
+
+`claude api` `faster-whisper`
+
+</td>
+</tr>
+<tr>
+<td width="18%" valign="top"><b>infra</b></td>
+<td valign="top">
+
+`aws` `docker` `postgres` `supabase` `git`
+
+</td>
+</tr>
+</table>
 <!-- /gen:stack -->
 
 ## `$ man faiz`
@@ -111,7 +174,7 @@ Open to **Winter and Summer 2027 internships**. Reach me at
 <div align="center">
 <sub>
 This page renders itself — <code>profile.config.json</code> is the source of truth and
-<code>scripts/build.mjs</code> emits every terminal above as SVG.<br/>
+<code>scripts/build.mjs</code> emits the terminal and rewrites every section above.<br/>
 The experience tense is derived from the date, so nothing here can go stale.
 </sub>
 </div>
