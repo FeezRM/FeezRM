@@ -9,10 +9,6 @@
 
 </div>
 
-<img src="https://komarev.com/ghpvc/?username=FeezRM&color=6366f1&style=flat-square&label=Profile+Views" />
-
-</div>
-
 ---
 
 ### About Me
