@@ -2,7 +2,12 @@
 
 # Hey, I'm Faiz 👋
 
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=6366F1&center=true&vCenter=true&width=600&lines=CS+Honours+Co-op+%40+Ontario+Tech;Building+AI)
+<img src="./assets/terminal.gif" alt="Faiz Kerawala animated terminal" width="760" />
+
+<a href="https://linkedin.com/in/faizkerawala"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
+<a href="mailto:faiz.kera@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" /></a>
+
+</div>
 
 <p>
   <a href="https://linkedin.com/in/faizkerawala"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
@@ -31,6 +36,7 @@ I build AI systems that are measurable, empirically validated, and actually usef
 <td width="50%" valign="top">
 
 **🕵️ ContentSpy**
+
 > AI Competitor Intelligence Platform
 
 Transcript ingestion → AI video analysis → content-gap detection → script generation.
@@ -43,6 +49,7 @@ Currently powering **6+ creator workflows** across a **10-user private beta**.
 <td width="50%" valign="top">
 
 **[🎬 Vibe Editor](https://github.com/FeezRM/vibe-editing)**
+
 > Agentic Video Pipeline
 
 Turns raw video into edited output through word-level transcription, LLM-generated edit decisions, and FFmpeg rendering.
@@ -57,6 +64,7 @@ A **0.85 confidence gate** filters unreliable AI cuts before they reach the rend
 <td width="50%" valign="top">
 
 **[🧠 FocusFlow](https://github.com/FeezRM/FocusFlow)**
+
 > AI Attention Monitor
 
 Computer-vision pipeline running at **10 FPS with <100ms inference**, backed by a 6-state attention FSM.
@@ -71,6 +79,7 @@ In a 50+ participant study:
 <td width="50%" valign="top">
 
 **[🤖 LLM Research Agent](https://github.com/FeezRM)**
+
 > Multi-Source Discovery Pipeline
 
 Structured research pipeline using deterministic guardrails, schema-constrained outputs, classification, and deduplication.
@@ -87,9 +96,10 @@ Normalized **100+ profiles across 7 niches** while reducing manual cleanup by **
 
 ### 💼 Experience
 
-**Northbridge Insurance** · *Incoming Software Developer Intern* · Spet – Dec 2026
+**Northbridge Insurance** · _Incoming Software Developer Intern_ · Spet – Dec 2026
 
-**MekTek Software Solutions & Engineering** · *Frontend Developer Intern* · Sept – Dec 2025
+**MekTek Software Solutions & Engineering** · _Frontend Developer Intern_ · Sept – Dec 2025
+
 - Audited AI-driven platform: identified and resolved **10+ critical security findings** before production
 - Built headless CMS with Next.js + WordPress REST APIs → **65% faster** content publishing
 
@@ -135,4 +145,3 @@ Normalized **100+ profiles across 7 niches** while reducing manual cleanup by **
 </div>
 
 ---
-
