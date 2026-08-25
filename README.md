@@ -33,7 +33,9 @@ I build AI systems that are measurable, empirically validated, and actually usef
 **🕵️ ContentSpy**
 > AI Competitor Intelligence Platform
 
-Transcript ingestion → AI video analysis → content gap detection → script generation. Serving 6+ creator workflows in a 10-user private beta.
+Transcript ingestion → AI video analysis → content-gap detection → script generation.
+
+Currently powering **6+ creator workflows** across a **10-user private beta**.
 
 `Next.js` `FastAPI` `PostgreSQL` `Supabase`
 
@@ -43,7 +45,9 @@ Transcript ingestion → AI video analysis → content gap detection → script 
 **[🎬 Vibe Editor](https://github.com/FeezRM/vibe-editing)**
 > Agentic Video Pipeline
 
-End-to-end: word-level transcription → LLM edit-decision list → ffmpeg render with captions. Confidence-gate filters bad AI cuts at 0.85 threshold — no per-clip human review.
+Turns raw video into edited output through word-level transcription, LLM-generated edit decisions, and FFmpeg rendering.
+
+A **0.85 confidence gate** filters unreliable AI cuts before they reach the render pipeline.
 
 `Python` `faster-whisper` `OpenCV` `LLM Agents`
 
@@ -55,7 +59,11 @@ End-to-end: word-level transcription → LLM edit-decision list → ffmpeg rende
 **[🧠 FocusFlow](https://github.com/FeezRM/FocusFlow)**
 > AI Attention Monitor
 
-Real-time CV pipeline (10 FPS, <100ms inference), 6-state cognitive FSM. User study across 50+ participants: **~50% less distracted time**, **~40% faster refocus**.
+Computer-vision pipeline running at **10 FPS with <100ms inference**, backed by a 6-state attention FSM.
+
+In a 50+ participant study:
+
+**~50% less distracted time · ~40% faster refocus**
 
 `Python` `FastAPI` `MediaPipe` `Electron`
 
@@ -65,7 +73,9 @@ Real-time CV pipeline (10 FPS, <100ms inference), 6-state cognitive FSM. User st
 **[🤖 LLM Research Agent](https://github.com/FeezRM)**
 > Multi-Source Discovery Pipeline
 
-Deterministic guardrails, JSON schemas, and classification logic — 100+ profiles normalized across 7 niches. **80%+ reduction** in manual cleanup via structured dedup.
+Structured research pipeline using deterministic guardrails, schema-constrained outputs, classification, and deduplication.
+
+Normalized **100+ profiles across 7 niches** while reducing manual cleanup by **80%+**.
 
 `Python` `Claude API` `Notion API` `Web Automation`
 
@@ -75,16 +85,13 @@ Deterministic guardrails, JSON schemas, and classification logic — 100+ profil
 
 ---
 
-### 📈 Impact by the Numbers
+### 💼 Experience
 
-| Metric | Result | Where |
-|--------|--------|-------|
-| Distracted time reduced | **~50%** | FocusFlow · 50+ participant study |
-| Session duration increase | **2.3×** | Meraki platform launch |
-| Appointment bookings | **2×** | Meraki · within 60 days |
-| Content publishing time | **↓65%** | MekTek headless CMS |
-| Security findings resolved | **10+** | MekTek pre-production audit |
-| Manual research cleanup eliminated | **80%+** | LLM Research Agent |
+**Northbridge Insurance** · *Incoming Software Developer Intern* · Spet – Dec 2026
+
+**MekTek Software Solutions & Engineering** · *Frontend Developer Intern* · Sept – Dec 2025
+- Audited AI-driven platform: identified and resolved **10+ critical security findings** before production
+- Built headless CMS with Next.js + WordPress REST APIs → **65% faster** content publishing
 
 ---
 
@@ -126,17 +133,6 @@ Deterministic guardrails, JSON schemas, and classification logic — 100+ profil
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
 </div>
-
----
-
-### 💼 Experience
-
-**Northbridge Insurance** · *Incoming Software Developer Intern* · Spet – Dec 2026
-- haven't started but gonna make huge impact
-
-**MekTek Software Solutions & Engineering** · *Frontend Developer Intern* · Sept – Dec 2025
-- Audited AI-driven platform: identified and resolved **10+ critical security findings** before production
-- Built headless CMS with Next.js + WordPress REST APIs → **65% faster** content publishing
 
 ---
 
