@@ -1,7 +1,5 @@
 <div align="center">
 
-# Hey, I'm Faiz 👋
-
 <img src="./assets/terminal.gif" alt="Faiz Kerawala animated terminal" width="760" />
 
 <a href="https://linkedin.com/in/faizkerawala"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
