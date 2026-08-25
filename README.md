@@ -22,8 +22,6 @@ CS Honours Co-op student at **Ontario Tech University** · **3.78 GPA · Dean's 
 
 I build AI systems that are measurable, empirically validated, and actually useful — real-time computer vision pipelines, LLM evaluation frameworks, and multi-agent workflows. I care about makin[...]
 
-> 🟢 **Available for full-time co-op · July – November 2026** · Canadian Citizen · Ajax, ON
-
 ---
 
 ### 🔨 What I'm Building
