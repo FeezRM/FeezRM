@@ -1,0 +1,79 @@
+{
+  "identity": {
+    "user": "faiz",
+    "host": "github",
+    "name": "Faiz Kerawala",
+    "title": "CS Honours Co-op @ Ontario Tech",
+    "github": "FeezRM",
+    "linkedin": "https://linkedin.com/in/faizkerawala",
+    "email": "faiz.kera@gmail.com"
+  },
+
+  "projects": [
+    {
+      "pid": 1042,
+      "slug": "contentspy",
+      "name": "ContentSpy",
+      "tagline": "AI Competitor Intelligence Platform",
+      "status": "building",
+      "signal": "10-user private beta · 6 creator workflows",
+      "url": null,
+      "badge": "private beta",
+      "detail": "Transcript ingestion → AI video analysis → content-gap detection → script generation. Currently powering 6+ creator workflows across a 10-user private beta.",
+      "stack": ["Next.js", "FastAPI", "PostgreSQL", "Supabase"]
+    },
+    {
+      "pid": 2318,
+      "slug": "vibe-editor",
+      "name": "Vibe Editor",
+      "tagline": "Agentic Video Pipeline",
+      "status": "shipped",
+      "signal": "0.85 confidence gate on AI cuts",
+      "url": "https://github.com/FeezRM/vibe-editing",
+      "badge": null,
+      "detail": "Turns raw video into edited output through word-level transcription, LLM-generated edit decisions, and FFmpeg rendering. A 0.85 confidence gate filters unreliable AI cuts before they reach the render pipeline.",
+      "stack": ["Python", "faster-whisper", "OpenCV", "LLM Agents"]
+    },
+    {
+      "pid": 3390,
+      "slug": "focusflow",
+      "name": "FocusFlow",
+      "tagline": "AI Attention Monitor",
+      "status": "shipped",
+      "signal": "10 FPS · <100ms inference · 50+ participants",
+      "url": "https://github.com/FeezRM/FocusFlow",
+      "badge": null,
+      "detail": "Computer-vision pipeline running at 10 FPS with <100ms inference, backed by a 6-state attention FSM. In a 50+ participant study: ~50% less distracted time and ~40% faster refocus.",
+      "stack": ["Python", "FastAPI", "MediaPipe", "Electron"]
+    }
+  ],
+
+  "experience": [
+    {
+      "org": "Northbridge Insurance",
+      "role": "Software Developer Intern",
+      "start": "2026-09-01",
+      "end": "2026-12-31",
+      "bullets": []
+    },
+    {
+      "org": "MekTek Software Solutions & Engineering",
+      "role": "Frontend Developer Intern",
+      "start": "2025-09-01",
+      "end": "2025-12-31",
+      "bullets": [
+        "Audited AI-driven platform: identified and resolved **10+ critical security findings** before production",
+        "Built headless CMS with Next.js + WordPress REST APIs → **65% faster** content publishing"
+      ]
+    }
+  ],
+
+  "stack": [
+    { "label": "languages", "items": ["python", "typescript", "java", "sql", "c++"] },
+    { "label": "backend",   "items": ["fastapi", "flask", "spring boot", "node"] },
+    { "label": "frontend",  "items": ["react", "next.js", "electron"] },
+    { "label": "ml / cv",   "items": ["opencv", "mediapipe", "scikit-learn"] },
+    { "label": "llm",       "items": ["claude api", "faster-whisper"] },
+    { "label": "infra",     "items": ["aws", "docker", "postgres", "supabase", "git"] }
+  ]
+}

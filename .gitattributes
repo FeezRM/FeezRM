@@ -1,0 +1,4 @@
+# The renderer always writes LF. Pinning line endings keeps a Windows checkout
+# from producing a spurious diff that would defeat the Action commit gate.
+* text=auto eol=lf
+*.gif binary

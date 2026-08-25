@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="448" viewBox="0 0 900 448" role="img" font-family="ui-monospace,SFMono-Regular,&quot;SF Mono&quot;,&quot;Cascadia Mono&quot;,Menlo,Consolas,&quot;Liberation Mono&quot;,monospace" font-size="15">
+<style>text{white-space:pre}</style>
+<defs>
+<filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0b0f17" flood-opacity="0.28"/></filter>
+
+</defs>
+<g filter="url(#sh)">
+<rect x="10" y="10" width="880" height="428" rx="12" fill="#ffffff" stroke="#d5dbe3"/>
+<path d="M10 22a12 12 0 0 1 12-12h856a12 12 0 0 1 12 12v26H10z" fill="#f2f4f8"/>
+<line x1="10" y1="48" x2="890" y2="48" stroke="#d5dbe3"/>
+<circle cx="34" cy="29" r="6" fill="#ff5f57"/><circle cx="54" cy="29" r="6" fill="#febc2e"/><circle cx="74" cy="29" r="6" fill="#28c840"/>
+<text x="450" y="34" text-anchor="middle" fill="#5f6774" font-size="12">faiz@github — zsh</text>
+</g>
+<g><text x="36" y="79" textLength="99" lengthAdjust="spacing" fill="#7c3aed" font-weight="600">faiz@github</text><text x="135" y="79" textLength="9" lengthAdjust="spacing" fill="#9aa3b0">:</text><text x="144" y="79" textLength="9" lengthAdjust="spacing" fill="#0969da">~</text><text x="153" y="79" textLength="9" lengthAdjust="spacing" fill="#5f6774">$</text></g>
+<text x="171" y="79" textLength="54" lengthAdjust="spacing" fill="#1f2328">whoami</text>
+<g><text x="36" y="104" textLength="117" lengthAdjust="spacing" fill="#1f2328" font-weight="600">Faiz Kerawala</text><text x="153" y="104" textLength="27" lengthAdjust="spacing" fill="#9aa3b0"> · </text><text x="180" y="104" textLength="279" lengthAdjust="spacing" fill="#5f6774">CS Honours Co-op @ Ontario Tech</text></g>
+<g><text x="36" y="154" textLength="99" lengthAdjust="spacing" fill="#7c3aed" font-weight="600">faiz@github</text><text x="135" y="154" textLength="9" lengthAdjust="spacing" fill="#9aa3b0">:</text><text x="144" y="154" textLength="9" lengthAdjust="spacing" fill="#0969da">~</text><text x="153" y="154" textLength="9" lengthAdjust="spacing" fill="#5f6774">$</text></g>
+<text x="171" y="154" textLength="225" lengthAdjust="spacing" fill="#1f2328">ps aux | grep -i building</text>
+<g><text x="36" y="179" textLength="27" lengthAdjust="spacing" fill="#9aa3b0">PID</text><text x="99" y="179" textLength="63" lengthAdjust="spacing" fill="#9aa3b0">PROJECT</text><text x="225" y="179" textLength="54" lengthAdjust="spacing" fill="#9aa3b0">STATUS</text><text x="342" y="179" textLength="54" lengthAdjust="spacing" fill="#9aa3b0">SIGNAL</text></g>
+<g><text x="36" y="204" textLength="36" lengthAdjust="spacing" fill="#5f6774">1042</text><text x="99" y="204" textLength="90" lengthAdjust="spacing" fill="#0969da" font-weight="600">contentspy</text><circle cx="229.5" cy="199" r="3.6" fill="#9a6700"/><text x="243" y="204" textLength="72" lengthAdjust="spacing" fill="#9a6700">building</text><text x="342" y="204" textLength="378" lengthAdjust="spacing" fill="#1f2328">10-user private beta · 6 creator workflows</text></g>
+<g><text x="36" y="229" textLength="36" lengthAdjust="spacing" fill="#5f6774">2318</text><text x="99" y="229" textLength="99" lengthAdjust="spacing" fill="#0969da" font-weight="600">vibe-editor</text><circle cx="229.5" cy="224" r="3.6" fill="#1a7f37"/><text x="243" y="229" textLength="63" lengthAdjust="spacing" fill="#1a7f37">shipped</text><text x="342" y="229" textLength="279" lengthAdjust="spacing" fill="#1f2328">0.85 confidence gate on AI cuts</text></g>
+<g><text x="36" y="254" textLength="36" lengthAdjust="spacing" fill="#5f6774">3390</text><text x="99" y="254" textLength="81" lengthAdjust="spacing" fill="#0969da" font-weight="600">focusflow</text><circle cx="229.5" cy="249" r="3.6" fill="#1a7f37"/><text x="243" y="254" textLength="63" lengthAdjust="spacing" fill="#1a7f37">shipped</text><text x="342" y="254" textLength="396" lengthAdjust="spacing" fill="#1f2328">10 FPS · &lt;100ms inference · 50+ participants</text></g>
+<g><text x="36" y="304" textLength="99" lengthAdjust="spacing" fill="#7c3aed" font-weight="600">faiz@github</text><text x="135" y="304" textLength="9" lengthAdjust="spacing" fill="#9aa3b0">:</text><text x="144" y="304" textLength="9" lengthAdjust="spacing" fill="#0969da">~</text><text x="153" y="304" textLength="9" lengthAdjust="spacing" fill="#5f6774">$</text></g>
+<text x="171" y="304" textLength="90" lengthAdjust="spacing" fill="#1f2328">cat now.md</text>
+<g><text x="36" y="329" textLength="9" lengthAdjust="spacing" fill="#0d7c8a">»</text><text x="54" y="329" textLength="378" lengthAdjust="spacing" fill="#1f2328">starting @ Northbridge Insurance in 7 days</text></g>
+<g><text x="36" y="354" textLength="9" lengthAdjust="spacing" fill="#0d7c8a">»</text><text x="54" y="354" textLength="513" lengthAdjust="spacing" fill="#5f6774">last push: vibe-editor@55cc291 — visual hook improvements</text></g>
+<g><text x="36" y="404" textLength="99" lengthAdjust="spacing" fill="#7c3aed" font-weight="600">faiz@github</text><text x="135" y="404" textLength="9" lengthAdjust="spacing" fill="#9aa3b0">:</text><text x="144" y="404" textLength="9" lengthAdjust="spacing" fill="#0969da">~</text><text x="153" y="404" textLength="9" lengthAdjust="spacing" fill="#5f6774">$</text></g>
+<rect x="171" y="391" width="9" height="18" rx="1" fill="#7c3aed"/>
+</svg>

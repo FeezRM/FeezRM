@@ -1,127 +1,96 @@
+<!-- gen:hero -->
+<div align="center">
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./assets/hero-dark-still.svg?v=7bf67bc8">
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/hero-light-still.svg?v=5588efe5">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg?v=077386e9">
+  <img alt="Terminal: faiz@github. whoami → Faiz Kerawala, CS Honours Co-op @ Ontario Tech. ps aux → contentspy (building) — 10-user private beta · 6 creator workflows; vibe-editor (shipped) — 0.85 confidence gate on AI cuts; focusflow (shipped) — 10 FPS · &lt;100ms inference · 50+ participants. cat now.md → starting @ Northbridge Insurance in 7 days." src="./assets/hero-light.svg?v=e3657144" width="900">
+</picture>
+</div>
+<!-- /gen:hero -->
+
 <div align="center">
 
-<img src="./assets/terminal.gif" alt="Faiz Kerawala animated terminal" width="760" />
+**Faiz Kerawala** — CS Honours Co-op @ Ontario Tech
 
-<a href="https://linkedin.com/in/faizkerawala"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
-<a href="mailto:faiz.kera@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" /></a>
+<a href="https://linkedin.com/in/faizkerawala">LinkedIn</a> ·
+<a href="mailto:faiz.kera@gmail.com">Email</a>
 
 </div>
 
----
+## `$ cat ~/projects/*`
 
-### 🔨 What I'm Building
+<!-- gen:projects -->
+<details>
+<summary><b>contentspy</b> — AI Competitor Intelligence Platform &nbsp;·&nbsp; <code>private beta</code><br/><sub>10-user private beta · 6 creator workflows</sub></summary>
 
-<table>
-<tr>
-<td width="50%" valign="top">
+Transcript ingestion → AI video analysis → content-gap detection → script generation. Currently powering 6+ creator workflows across a 10-user private beta.
 
-**🕵️ ContentSpy**
-
-> AI Competitor Intelligence Platform
-
-Transcript ingestion → AI video analysis → content-gap detection → script generation.
-
-Currently powering **6+ creator workflows** across a **10-user private beta**.
+Source is private while the beta runs.
 
 `Next.js` `FastAPI` `PostgreSQL` `Supabase`
 
-</td>
-<td width="50%" valign="top">
+</details>
 
-**[🎬 Vibe Editor](https://github.com/FeezRM/vibe-editing)**
+<details>
+<summary><b>vibe-editor</b> — Agentic Video Pipeline<br/><sub>0.85 confidence gate on AI cuts</sub></summary>
 
-> Agentic Video Pipeline
+Turns raw video into edited output through word-level transcription, LLM-generated edit decisions, and FFmpeg rendering. A 0.85 confidence gate filters unreliable AI cuts before they reach the render pipeline.
 
-Turns raw video into edited output through word-level transcription, LLM-generated edit decisions, and FFmpeg rendering.
-
-A **0.85 confidence gate** filters unreliable AI cuts before they reach the render pipeline.
+**Repo →** [FeezRM/vibe-editing](https://github.com/FeezRM/vibe-editing)
 
 `Python` `faster-whisper` `OpenCV` `LLM Agents`
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+</details>
 
-**[🧠 FocusFlow](https://github.com/FeezRM/FocusFlow)**
+<details>
+<summary><b>focusflow</b> — AI Attention Monitor<br/><sub>10 FPS · &lt;100ms inference · 50+ participants</sub></summary>
 
-> AI Attention Monitor
+Computer-vision pipeline running at 10 FPS with &lt;100ms inference, backed by a 6-state attention FSM. In a 50+ participant study: ~50% less distracted time and ~40% faster refocus.
 
-Computer-vision pipeline running at **10 FPS with <100ms inference**, backed by a 6-state attention FSM.
-
-In a 50+ participant study:
-
-**~50% less distracted time · ~40% faster refocus**
+**Repo →** [FeezRM/FocusFlow](https://github.com/FeezRM/FocusFlow)
 
 `Python` `FastAPI` `MediaPipe` `Electron`
 
-</td>
-<td width="50%" valign="top">
+</details>
+<!-- /gen:projects -->
 
-**[🤖 LLM Research Agent](https://github.com/FeezRM)**
+## `$ history | grep work`
 
-> Multi-Source Discovery Pipeline
+<!-- gen:experience -->
+**Northbridge Insurance** · _Incoming Software Developer Intern_ · Sep – Dec 2026
 
-Structured research pipeline using deterministic guardrails, schema-constrained outputs, classification, and deduplication.
-
-Normalized **100+ profiles across 7 niches** while reducing manual cleanup by **80%+**.
-
-`Python` `Claude API` `Notion API` `Web Automation`
-
-</td>
-</tr>
-</table>
-
----
-
-### 💼 Experience
-
-**Northbridge Insurance** · _Incoming Software Developer Intern_ · Spet – Dec 2026
-
-**MekTek Software Solutions & Engineering** · _Frontend Developer Intern_ · Sept – Dec 2025
+**MekTek Software Solutions & Engineering** · _Frontend Developer Intern_ · Sep – Dec 2025
 
 - Audited AI-driven platform: identified and resolved **10+ critical security findings** before production
 - Built headless CMS with Next.js + WordPress REST APIs → **65% faster** content publishing
+<!-- /gen:experience -->
 
----
+## `$ neofetch`
 
-### 🛠 Tech Stack
-
+<!-- gen:stack -->
 <div align="center">
-
-**Languages**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-
-**Frameworks & Tools**
-
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
-![Electron](https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white)
-
-**ML & AI**
-
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
-![Claude](https://img.shields.io/badge/Claude_API-D97757?style=flat-square&logo=anthropic&logoColor=white)
-
-**Cloud & Infra**
-
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/stack-dark.svg?v=14fbb1ed">
+  <img alt="Tech stack, neofetch style. languages: python, typescript, java, sql, c++. backend: fastapi, flask, spring boot, node. frontend: react, next.js, electron. ml / cv: opencv, mediapipe, scikit-learn. llm: claude api, faster-whisper. infra: aws, docker, postgres, supabase, git." src="./assets/stack-light.svg?v=4adba6e7" width="900">
+</picture>
 </div>
+<!-- /gen:stack -->
+
+## `$ man faiz`
+
+I build systems where the AI is a component, not the product — which mostly means
+deciding what to do when the model is wrong. A confidence gate in front of a render
+pipeline, a deterministic FSM behind a vision model, schema constraints on generated
+output. The interesting engineering is in the guardrails.
+
+Best way to reach me is [faiz.kera@gmail.com](mailto:faiz.kera@gmail.com).
 
 ---
+
+<sub>
+This page renders itself. <code>profile.config.json</code> is the source of truth;
+<code>scripts/build.mjs</code> emits the terminals as animated SVG and rewrites the
+generated blocks above. A GitHub Action reruns it daily and commits only when
+something real has changed — the process table, the countdown, the last push.
+</sub>

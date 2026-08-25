@@ -1,0 +1,52 @@
+name: render profile
+
+on:
+  schedule:
+    # Daily, not hourly. The render only changes when something real changes
+    # (the countdown, the process table, the last push), and an hourly bot commit
+    # would inflate the contribution graph for no reason.
+    - cron: '17 13 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    # Deliberately excludes assets/** and README.md, which are this workflow's own
+    # output -- otherwise every render would trigger the next one.
+    paths:
+      - 'profile.config.json'
+      - 'scripts/**'
+      - '.github/workflows/render.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: render-profile
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      # No dependencies, so no install step and nothing to cache.
+      - name: Render
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/build.mjs
+
+      - name: Commit if anything actually changed
+        run: |
+          if git diff --quiet -- assets README.md; then
+            echo "No change in the render — nothing to commit."
+            exit 0
+          fi
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets README.md
+          git commit -m 'chore: render profile [skip ci]'
+          git push
