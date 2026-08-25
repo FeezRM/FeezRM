@@ -11,14 +11,6 @@
 
 ---
 
-### About Me
-
-CS Honours Co-op student at **Ontario Tech University** · **3.78 GPA · Dean's List**
-
-I build AI systems that are measurable, empirically validated, and actually useful — real-time computer vision pipelines, LLM evaluation frameworks, and multi-agent workflows. I care about makin[...]
-
----
-
 ### 🔨 What I'm Building
 
 <table>
