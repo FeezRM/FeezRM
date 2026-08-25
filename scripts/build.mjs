@@ -106,7 +106,9 @@ function projectsBlock(cfg) {
     rows.push(`<tr>\n${cells.join('\n')}\n</tr>`);
   }
 
-  return `<table>\n${rows.join('\n')}\n</table>`;
+  // Without an explicit width the table shrinks to its content instead of
+  // spanning the content column, so the grids stop lining up with each other.
+  return `<table width="100%">\n${rows.join('\n')}\n</table>`;
 }
 
 /**
@@ -127,7 +129,9 @@ function experienceBlock(cfg, now) {
     if (e.bullets.length) body.push(e.bullets.map((b) => `- ${b}`).join('\n'), '');
     return `<tr>\n<td valign="top">\n${body.join('\n')}\n</td>\n</tr>`;
   });
-  return `<table>\n${rows.join('\n')}\n</table>`;
+  // Without an explicit width the table shrinks to its content instead of
+  // spanning the content column, so the grids stop lining up with each other.
+  return `<table width="100%">\n${rows.join('\n')}\n</table>`;
 }
 
 /** Stack as a label/chips table -- same chip language as the project cards. */
@@ -136,8 +140,8 @@ function stackBlock(cfg) {
     const chips = r.items.map((i) => `\`${i}\``).join(' ');
     return [
       '<tr>',
-      `<td width="18%" valign="top"><b>${h(r.label)}</b></td>`,
-      '<td valign="top">',
+      `<td width="16%" valign="top"><b>${h(r.label)}</b></td>`,
+      '<td width="84%" valign="top">',
       '',
       chips,
       '',
@@ -145,7 +149,9 @@ function stackBlock(cfg) {
       '</tr>'
     ].join('\n');
   });
-  return `<table>\n${rows.join('\n')}\n</table>`;
+  // Without an explicit width the table shrinks to its content instead of
+  // spanning the content column, so the grids stop lining up with each other.
+  return `<table width="100%">\n${rows.join('\n')}\n</table>`;
 }
 
 async function main() {

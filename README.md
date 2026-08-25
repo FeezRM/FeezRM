@@ -27,7 +27,7 @@
 ## `$ ls ~/projects`
 
 <!-- gen:projects -->
-<table>
+<table width="100%">
 <tr>
 <td colspan="2" valign="top">
 
@@ -77,7 +77,7 @@ Computer-vision pipeline running at 10 FPS with &lt;100ms inference, backed by a
 ## `$ history | grep work`
 
 <!-- gen:experience -->
-<table>
+<table width="100%">
 <tr>
 <td valign="top">
 
@@ -107,50 +107,50 @@ Computer-vision pipeline running at 10 FPS with &lt;100ms inference, backed by a
 ## `$ stack --list`
 
 <!-- gen:stack -->
-<table>
+<table width="100%">
 <tr>
-<td width="18%" valign="top"><b>languages</b></td>
-<td valign="top">
+<td width="16%" valign="top"><b>languages</b></td>
+<td width="84%" valign="top">
 
 `python` `typescript` `java` `sql` `c++`
 
 </td>
 </tr>
 <tr>
-<td width="18%" valign="top"><b>backend</b></td>
-<td valign="top">
+<td width="16%" valign="top"><b>backend</b></td>
+<td width="84%" valign="top">
 
 `fastapi` `flask` `spring boot` `node`
 
 </td>
 </tr>
 <tr>
-<td width="18%" valign="top"><b>frontend</b></td>
-<td valign="top">
+<td width="16%" valign="top"><b>frontend</b></td>
+<td width="84%" valign="top">
 
 `react` `next.js` `electron`
 
 </td>
 </tr>
 <tr>
-<td width="18%" valign="top"><b>ml / cv</b></td>
-<td valign="top">
+<td width="16%" valign="top"><b>ml / cv</b></td>
+<td width="84%" valign="top">
 
 `opencv` `mediapipe` `scikit-learn`
 
 </td>
 </tr>
 <tr>
-<td width="18%" valign="top"><b>llm</b></td>
-<td valign="top">
+<td width="16%" valign="top"><b>llm</b></td>
+<td width="84%" valign="top">
 
 `claude api` `faster-whisper`
 
 </td>
 </tr>
 <tr>
-<td width="18%" valign="top"><b>infra</b></td>
-<td valign="top">
+<td width="16%" valign="top"><b>infra</b></td>
+<td width="84%" valign="top">
 
 `aws` `docker` `postgres` `supabase` `git`
 
